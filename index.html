@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Welcome to YANC, where young minds connect and grow through networking and life skills.">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>YANC Landing Page</title>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+
+    <header>
+        <div class="logo" id="logo">
+            <img src="yanc (1) (1).png" alt="YANC Logo"><br>
+            <p class="tagline">Young Minds | Networking | Life Skills</p>
+        </div>
+        <nav>
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item">
+                    About Us
+                    <div class="subsection-container">
+                        <a class="subsection" href="#milestone" style="color: #f8f9f8;font-weight:bold" ;>Vision</a><br>
+                        <a class="subsection" href="#milestone" style="color:#fff; font-weight: bold;">Mission</a><br>
+                        <a class="subsection" href="#CoreValues" style="color:white; font-weight: bold;">Core Values</a><br>
+                    </div>   
+                </li>
+                <li class="nav-item">
+                    Our Offerings
+                    <div class="subsection-container">
+                        <a class="subsection" href="#offer" style="color:white; font-weight:bolder ;">Services</a><br>
+                        <a class="subsection" href="#takeaway" style="color:white; font-weight:bolder;">Why Us</a><br>
+                        <a class="subsection" href="#bye" style="color:white; font-weight:bolder;">Who Can Join</a><br>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#internship">Careers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#form">Get in touch</a></li>
+            </ul>
+        </nav>
+    
+    
+    <style>
+        
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 17px 30px;
+            background-color: black; /* Set header background to black */
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000; /* Ensure the header is always on top */
+            width: 100%;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+        }
+    
+        .logo {
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+    
+        .logo img {
+            max-width: 100px; /* Increased logo size */
+            height: auto;
+            margin-right: 15px;
+            padding-bottom: 5px;
+        }
+    .nav-link:hover{
+        color:orangered;
+    }
+        .tagline {
+            padding-top: 17px;
+            font-size: 1.5em; /* Increased font size for better visibility */
+            white-space: nowrap;
+            padding-left: 0ch;
+           text-align:left;
+            padding-bottom: 15px;
+        }
+    
+        nav {
+            flex: 2;
+            text-align: right;
+        }
+    
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            padding: 0;
+            margin: 0;
+        }
+    
+        .nav-item {
+            position: relative;
+            margin: 0 25px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+    
+        .nav-item a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+        
+   .nav-item:hover{
+    color:orangered;
+   } 
+        /* Subsections container styling */
+        .subsection-container {
+            display: none;
+            position: absolute;
+            padding: 10px;
+            border-radius: 5px;
+            top: 100%; /* Position below the parent */
+            left: 0;
+            white-space: nowrap;
+            z-index: 999;
+        }
+    
+        /* Show subsections on hover */
+        .nav-item:hover .subsection-container {
+            display: block;
+        }
+
+        
+    @media (min-width:1200px) and (max-width:1800px){
+.logo img{
+    max-width: 120px;}
+.tagline {
+    font-size: 1.5em;
+    }
+}
+    
+        @media (max-width: 768px) {
+           
+    
+            .logo img {
+                max-width: 80px; 
+            }
+    
+            .tagline {
+                font-size: 1.2em;
+            }
+    
+           
+        }
+    
+        @media (min-width:340px) and (max-width: 480px) {
+            
+    
+            .logo img {
+                max-width: 60px; /* Smaller logo for very small screens */
+            }
+    
+            .tagline {
+                font-size: 0.8em;
+            }
+        }
+    </style></header>
+    <main>
+        <section id="home">
+
+        <div class="carousel">
+            <!-- list item -->
+            <div class="list">
+                <div class="item">
+                    <img src="images/background1.jpg">
+                    <div class="content">
+                        <div class="author">  </div>
+                        <div class="title"></div>
+                        <div class="topic">The Illusion of Readiness</div>
+                        <div class="des">
+                            <!-- lorem 50 -->
+                            Fresh out of college, brimming with knowledge, you think you are
+                            ready to conquer the world. <br>But reality bites. It's not as simple as you thought.
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/background2.png">
+                    <div class="content">
+                        <div class="author"></div>
+                        <div class="title"></div>
+                        <div class="topic">If you could rewind time...</div>
+                        <div class="des">
+                            What would you change? What would you do differently?
+                        </div>
+                       
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <img src="images/background3.png">
+                    <div class="content">
+                        <div class="author"></div>
+                        <div class="title"></div>
+                        <div class="topic">The Power of Networking and Life Skills</div>
+                        <div class="des">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/background5.png">
+                    <div class="content">
+                        <div class="author"></div>
+                        <div class="title"></div>
+                        <div class="topic" style="padding-top: 20px;">Your bridge to access the powerful and exclusive network from young age
+                        </div>
+                        <div class="des">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/background4.png">
+                    <div class="content">
+                       
+                        <div class="title"></div>
+                        <div class="topic">YANC helps you get ready for life 
+                            through networking and experiential learning...</div>
+                        
+                        <div class="des">
+                            Access an exclusive network
+                           <br>Develop key skills from a young age
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- list thumnail -->
+            <div class="thumbnail">
+                <div class="item">
+                    <img src="images/background3.png">
+                    <div class="content">
+                        <div class="title">
+                            Passage
+                        </div>
+                        <div class="description">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/background2.png">
+                    <div class="content">
+                        <div class="title">
+                            Rewind
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/background3.png">
+                    <div class="content">
+                        <div class="title">
+                            Empowerment
+                        </div>
+                        <div class="description">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/background5.png">
+                    <div class="content">
+                        <div class="title">
+                            Gateway
+                        </div>
+                        <div class="description">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <!-- next prev -->
+    
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <!-- time running -->
+            <div class="time"></div>
+        </div></section>
+        <section id="about">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-5 py-5">
+                        <div class="row">
+                            <div class="col-12">
+
+                                <div class="ms-4">
+                                    <h3 style="color:#ff5500">YANC <br>
+                                    </h3>
+
+                                    <p class="w3-opacity w3-text-white"><i>Yet Another Networking Club</i></p>
+
+                                    <p> Networking and life skills are crucial in today's fast-paced world.
+                                        Networking helps you connect with diverse individuals, opening doors to job
+                                        opportunities, partnerships, and mentorships.
+                                        It fosters knowledge sharing and skill development, enhancing your professional
+                                        growth. Life skills, such as communication,
+                                        problem-solving, and emotional intelligence, are essential for navigating daily
+                                        challenges and building meaningful relationships.
+                                        Together, these skills enable you to adapt to changing environments, make
+                                        informed decisions, and achieve personal and
+                                        professional success. Embracing networking and life skills ensures you stay
+                                        relevant, resilient, and ready to seize new opportunities.</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            </div>
+        </section>
+        <section id="milestone">
+            <div class="container">
+                <div class="row text-center justify-content-center gy-4">
+                    <div class="col-lg-2 col-sm-6">
+                        <h1 class="display-4">Vision</h1>
+                        <p class="mb-0">Empowering young minds together
+                        </p>
+                    </div>
+                    <div class="col-lg-2 col-sm-6">
+                        <h1 class="display-4">Mission</h1>
+                        <p class="mb-0">We help you get ready for life</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <div class="offer" >
+            <h1 style="background: black; color: white;">What We Offer?</h1>
+        </div>
+        
+        <section class="slider-container">
+            <section id="offer">
+       <div class="slider-images">
+              <div class="slider-img">
+                <img src="imagez/img1.png" alt="1" />
+                <h1>Monthly Meetups & Networking</h1>
+                <div class="details">
+                    <p style="color: #ff6f00;">Monthly Meetups & Networking</p>                  <p>Connect with peers and professionals in engaging meetings.</p>
+                </div>
+              </div>
+      
+              <div class="slider-img">
+                <img src="imagez/img2.png" alt="2" />
+                <h1>Practical Skill-Building Workshops</h1>
+                <div class="details">
+                    <p style="color: #ff6f00;">Practical Skill-Building Workshops</p>
+                  <p>Develop crucial life skills through interactive learning experiences.</p>
+                </div>
+              </div>
+      
+              <div class="slider-img">
+                <img src="imagez/img3.png" alt="3" />
+                <h1>Mentorship Programs</h1>
+                <div class="details">
+                    <p style="color: #ff6f00;">Mentorship Programs</p>
+                  <p>Gain insights from experienced professionals in various fields.</p>
+                </div>
+              </div>
+      
+              <div class="slider-img active">
+                <img src="imagez/img4.png" alt="4" />
+                <h1>Experience from Real-World Projects</h1>
+                <div class="details">
+                    <p style="color: #ff6f00;">Experience from Real-World Projects</p>
+                  <p>Learn to manage money effectively and make informed financial decisions.</p>
+                </div>
+              </div>
+      
+              <div class="slider-img">
+                <img src="imagez/img5.png" alt="5" />
+                <h1>Financial Literacy</h1>
+                <div class="details">
+                    <p style="color: #ff6f00;">Financial Literacy</p>
+                  <p>Develop crucial life skills through interactive learning experiences.</p>
+                </div>
+              </div>
+      
+              <div class="slider-img">
+                <img src="imagez/img6.png" alt="6" />
+                <h1>Building Relationships</h1>
+                <div class="details">
+                    <p style="color: #ff6f00;">Building Relationships</p>
+                  <p>Develop strong interpersonal skills and foster meaningful connections.</p>
+                </div>
+              </div>
+    
+              
+            </div>
+          
+      
+          <script src="js/jQuery.js"></script>
+          <script>
+            jQuery(document).ready(function ($) {
+              $(".slider-img").on("click", function () {
+                $(".slider-img").removeClass("active"); // Remove active class from all
+                $(this).addClass("active"); // Add active class to clicked image
+              });
+            });
+            
+          </script>
+        </section>
+        </section>
+        <section id="takeaway" class="text-center" style="background-color: black;">
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <div class="intro">
+                        <h1 style="margin-bottom: 2rem;">Your Takeaway<br></h1> <!-- Added margin-bottom -->
+                    </div>
+                </div>
+            </div>
+        
+            <style>
+                .container {
+                    display: flex;
+                    justify-content: center; /* Center the cards horizontally */
+                    gap: 4rem;
+                    margin-top: 3rem; /* Added margin-top to push the container down */
+                }
+        
+                /* Card styles */
+                .effect {
+                    position: relative;
+                    color: rgb(253, 247, 247);
+                    padding: 2rem;
+                    background-size: cover;
+                    background-position: center;
+                    width: 300px; /* Increased width */
+                    height: 200px; /* Increased height */
+                    border-radius: 20px;
+                    font-size: 1.5rem;
+                    transition: transform 1s ease-in-out, box-shadow 0.5s ease;
+                    animation: float 3s ease-in-out infinite;
+                }
+        
+                .effect:hover {
+                    animation: none;
+                    box-shadow: 0 0 20px rgba(255, 0, 0, 1), /* Red */
+                                0 0 30px rgba(0, 255, 0, 0.75), /* Green */
+                                0 0 40px rgba(0, 0, 255, 0.75); /* Blue */
+                }
+        
+                .card-left {
+                    background-image: url("imagez/img8.png"); /* Increased image size */
+                    background-size: cover;
+                }
+        
+                .card-right {
+                    background-image: url("imagez/img9.png"); /* Increased image size */
+                    background-size: cover;
+                }
+        
+                .effect::before,
+                .effect::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+        
+                .effect::before {
+                    display: block;
+                    width: 350px;
+                    height: 200px;
+                    border-radius: inherit;
+                    filter: blur(20px);
+                    z-index: -1;
+                }
+        
+                .effect::after {
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    filter: blur(10px);
+                    display: block;
+                    width: 250px;
+                    height: 170px;
+                    border-radius: inherit;
+                    z-index: -2;
+                }
+        
+                /* Heading styles */
+                .effect .heading {
+                    font-size: 1.5rem;
+                    color: #b3ffb3;
+                }
+        
+                /* Description box */
+                .effect .description {
+                    opacity: 0;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    transition: opacity 1s ease, transform 1s ease;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-size: larger;
+                    color: #f8f9f8;
+                }
+        
+                .card-left:hover .description {
+                    opacity: 1;
+                    transform: translate(-130%, -50%);
+                }
+        
+                .card-right:hover .description {
+                    opacity: 1;
+                    transform: translate(110%, -50%);
+                }
+        
+                /* Floating animation */
+                @keyframes float {
+                    0% {
+                        transform: translateY(0);
+                    }
+        
+                    50% {
+                        transform: translateY(-100px);
+                    }
+        
+                    100% {
+                        transform: translateY(0);
+                    }
+                }
+            </style>
+        
+            <div class="container">
+                <div class="effect card-left">
+                    <div class="heading" style="color:rgb(255, 68, 0)">Experience and life skills</div>
+                    <div class="description">Crucial abilities for success</div>
+                </div>
+                <div class="effect card-right">
+                    <div class="heading" style="color:rgb(255, 68, 0)">Meaningful connections</div>
+                    <div class="description">Building relationships and social skills</div>
+                </div>
+            </div>
+        </section>
+<section class="bg-light" id="CoreValues">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h1>What we stand For ?</h1>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="img/project1.jpg" alt="Respect">
+                    <div class="contents">
+                        <h3>Respect</h3>
+                        <h6>Treat everyone with dignity and value diverse perspectives.</h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/project2.jpg" alt="Doing the Right Thing">
+                    <div class="contents">
+                        <h3>Doing the Right Thing</h3>
+                        <h6>Act with integrity and make ethical decisions.</h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/project3.jpg" alt="Think Big, Start Small">
+                    <div class="contents">
+                        <h3>Think Big, Start Small</h3>
+                        <h6>Dream ambitiously while taking actionable steps.</h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/project5.jpg" alt="Purposeful learning">
+                    <div class="contents">
+                        <h3>Purposeful learning</h3>
+                        <h6>Breaking silos, fostering cross-functional teamwork.</h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/project4.jpg" alt="Fostering Connections">
+                    <div class="contents">
+                        <h3>Fostering Connections</h3>
+                        <h6>Building strong relationships with clients and stakeholders.</h6>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/project6.png" alt="Resilience">
+                    <div class="contents">
+                        <h3>Resilience</h3>
+                        <h6>Maintaining focus and determination despite setbacks</h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/bg_banner2.jpg" alt="Gratitude">
+                    <div class="contents">
+                        <h3>Gratitude</h3>
+                        <h6>Fostering a culture of appreciation and support
+                        </h6>
+                    </div>
+
+</div>                </div>
+
+
+            </div>
+</section>
+            <section id="hi" style="background-color: black;">
+                <h2>Why Us?</h2>
+                <div class="why-us-section">
+                    <div class="advantage-container">
+                        <div class="advantage">
+                            <h3 class="typing-effect">The YANC Advantage</h3>
+                            <p>All-in-one platform for personal and professional growth.</p>
+                        </div>
+                        <div class="advantage">
+                            <h3 class="typing-effect">Comprehensive Ecosystem</h3>
+                            <p>Blending human touch with technological innovation.</p>
+                        </div>
+                        <div class="advantage">
+                            <h3 class="typing-effect">Cutting-Edge Approach</h3>
+                            <p>Leveraging the latest tools and techniques for optimal results.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    const elements = document.querySelectorAll('.typing-effect');
+
+                    elements.forEach(element => {
+                        const text = element.textContent;
+                        element.textContent = '';
+                        let index = 0;
+
+                        function type() {
+                            if (index < text.length) {
+                                element.textContent += text.charAt(index);
+                                index++;
+                                setTimeout(type, 100);
+                            } else {
+                                setTimeout(() => {
+                                    element.textContent = '';
+                                    index = 0;
+                                    setTimeout(type, 1000);
+                                }, 2000);
+                            }
+                        }
+
+                        type();
+                    });
+                </script>
+
+            </section>
+
+            <section id="bye">
+                <div class="elite-club-container">
+                    <h1>Join us</h1>
+                    <div class="group-container">
+                        <div class="group-card">
+                            <p style="font: size 100px; font-weight:bold ;">For Youth (15-28)</p><br>
+                            <p>Access a world of opportunities to grow, learn, and connect.</p>
+                        </div>
+                        <div class="group-card">
+                            <p style="font: size 100px; font-weight:bold ;">For Mentors</p><br>
+                            <p>Share your expertise and make a difference in young lives.</p>
+                        </div>
+                        <div class="group-card">
+                             <p style="font: size 100px; font-weight:bold ;">For Partners</p><br>
+                            <p>Schools, Colleges, Institutes, Employers, and Business owners can collaborate with YANC
+                                to empower the next generation.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="internship" style="background-color: black;">
+                <h1> Careers</h1>
+                <div class="container3">
+                    <div class="internship-section">
+                        <h2>Career Opportunities</h2>
+                        <p>Join our team and kickstart your career in the tech, sales, operations,
+                            finance, marketing....</p>
+                        <h3>Apply Now</h3>
+                        <form action="/submit" method="post" enctype="multipart/form-data">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="department">Select Department:</label>
+                            <select id="department" name="department" required>
+                                <option value="tech">Tech</option>
+                                <option value="sales">Sales</option>
+                                <option value="operations">Operations</option>
+                                <option value="finance">Finance</option>
+                                <option value="marketing">Marketing</option>
+                            </select>
+
+                            <label for="resume">Upload Your Resume:</label>
+                            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                    <div class="image-section">
+                        <img src="img/project5.jpg" alt="Career Opportunities">
+                    </div>
+                </div>
+            </section>
+    </main>
+    <section>
+        <style>
+        .custom-icon {
+            font-size: 40px;               /* Increased icon size for visibility */
+            position: fixed;               /* Fixed positioning keeps it visible */
+            bottom: 80px;                  /* Position 80px above the footer */
+            right: 20px;                   /* Positioned 20px from the right */
+            cursor: pointer;
+            z-index: 1000;                 /* Keeps it above other content */
+            color: rgb(255, 76, 5);        /* Change the icon color for better visibility */
+            border-radius: 50%;            /* Make it circular */
+            padding: 10px;                 /* Add some padding */
+            transform: translateY(50%);    /* Adjust for vertical alignment */
+            display: none;                 /* Initially hidden */
+            transition: opacity 0.3s;      /* Smooth appearance */
+        }
+
+        /* Parallax Form Container with transitions for smooth hide/show */
+        #customFormContainer {
+            display: none;                 /* Initially hidden */
+            opacity: 0;                    /* Fully transparent when hidden */
+            position: fixed;               /* Fixes the form to the viewport */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;                 /* Full screen height */
+            background-color: rgba(0, 0, 0, 0.6);  /* Semi-transparent black background */
+            z-index: 999;                  /* Ensure it's on top of other content */
+            transition: opacity 0.3s ease-in-out; /* Smooth transition for fade effect */
+        }
+
+        /* Active state for the form container */
+        #customFormContainer.active {
+            display: block;                /* Display the form */
+            opacity: 1;                    /* Fully opaque */
+        }
+
+        /* Basic form styling with background image and blur effect */
+        .custom-form {
+            margin: 0 auto;
+            padding: 20px;
+            width: 300px;
+            background: url('imagez/img1.png') no-repeat center; /* Background image for the card */
+            background-size: cover;
+            backdrop-filter: blur(100px); /* Blurred background for the card */
+            border-radius: 10px;
+            position: absolute;
+            right: 50px;                  /* Positions the form towards the right */
+            top: 20%;                     /* Moves the form 20% down the screen */
+            box-shadow: 0px 4px 15px rgba(123, 40, 40, 0.5); /* Add shadow for a pop effect */
+        }
+
+        /* Input fields styling */
+        .custom-form input[type="text"],
+        .custom-form input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .custom-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .custom-form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+     <i class="fas fa-user-plus custom-icon" id="customToggleFormIcon"></i>
+
+     <!-- Parallax Form -->
+      <section id="form">
+     <div id="customFormContainer">
+         <form class="custom-form">
+             <h3>Contact Us</h3>
+             <label for="name">Name:</label><br>
+             <input type="text" id="name" name="name"><br><br>
+             <label for="email">Email:</label><br>
+             <input type="email" id="email" name="email"><br><br>
+             <input type="submit" value="Submit">
+         </form>
+     </div>
+ 
+     <script>
+         const customIcon = document.getElementById("customToggleFormIcon");
+         const customFormContainer = document.getElementById("customFormContainer");
+         
+         // Show icon when scrolling down
+         window.addEventListener("scroll", function() {
+             if (window.scrollY > 200) { // Change this value to adjust when the icon appears
+                 customIcon.style.display = "block";
+                 customIcon.style.opacity = 1;
+             } else {
+                 customIcon.style.opacity = 0; // Hide icon smoothly
+                 setTimeout(() => { // Delay hiding it completely for better UX
+                     if (customIcon.style.opacity === "0") {
+                         customIcon.style.display = "none";
+                     }
+                 }, 300); // Match this duration with the transition time
+             }
+         });
+ 
+         customIcon.addEventListener("click", function() {
+             if (customFormContainer.classList.contains('active')) {
+                 customFormContainer.style.opacity = 0;
+                 setTimeout(() => {
+                     customFormContainer.classList.remove('active'); // Hide form
+                     customFormContainer.style.display = 'none';
+                     document.body.style.overflow = ''; 
+                 }, 300); // Allow fade-out before hiding
+             } else {
+                 customFormContainer.style.display = 'block';
+                 setTimeout(() => { // Wait briefly to allow display change
+                     customFormContainer.classList.add('active'); // Show form
+                     customFormContainer.style.opacity = 1;
+                     document.body.style.overflow = 'hidden';
+                 }, 10); // Small delay to avoid abruptness
+             }
+         });
+ 
+         // Hide form when clicking outside of it
+         customFormContainer.addEventListener("click", function(event) {
+             if (event.target === customFormContainer) { // Only hide when clicking the background (not the form itself)
+                 customFormContainer.style.opacity = 0;
+                 setTimeout(() => {
+                     customFormContainer.classList.remove('active'); // Hide the form
+                     customFormContainer.style.display = 'none';
+                     document.body.style.overflow = ''; 
+                 }, 300); // Allow fade-out before hiding
+             }
+         });
+     </script>
+    </section>
+    </section>
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#milestone">Vision & Mission</a></li>
+                    <li><a href="#CoreValues">Core Values</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Our Offerings</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#why-us">Why Us</a></li> <!-- Updated ID to be more descriptive -->
+                    <li><a href="#who-can-join">Who Can Join</a></li> <!-- Updated ID to be more descriptive -->
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Careers</h4>
+                <ul>
+                    <li><a href="#job-openings">Job Openings</a></li> <!-- Updated ID for consistency -->
+                    <li><a href="#internships">Internships</a></li> <!-- Corrected spelling of "Internships" -->
+                </ul>
+            </div>
+        </div> <!-- Closing div for footer-content -->
+        <div class="social-media-icons"> <!-- Fixed class name to use hyphens -->
+            <a href="https://www.instagram.com/oneyanc/" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/oneyanc/posts/?feedView=all" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="facebook.com/p/YANC-61565847200938" target="_blank" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://x.com/OneYanc" target="_blank" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
